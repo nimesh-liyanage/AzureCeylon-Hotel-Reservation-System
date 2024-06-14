@@ -1,0 +1,66 @@
+@charset "ISO-8859-1";
+
+/* Custom CSS for styling */
+        body {
+            background-color: #f4f4f4;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .reservation-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        
+        /* Style the "Edit" and "Delete" buttons */
+        .edit-button {
+            margin-right: 10px;
+        }
+
+        .delete-button {
+            background-color: #dc3545;
+            border: none;
+        }
+        
+        /* Add an "active" class to highlight the active tab */
+        .sidebar a.active {
+            background-color: #555;
+        }

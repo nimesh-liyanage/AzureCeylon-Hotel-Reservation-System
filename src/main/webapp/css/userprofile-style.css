@@ -1,0 +1,82 @@
+@charset "ISO-8859-1";
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#update-button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #008CBA;
+    color: white;
+    cursor: pointer;
+}
+
+#update-button:hover {
+    opacity: 0.8;
+}
+
+#username {
+    font-weight: bold;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Popup  styling */
+
+#update-window{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+#update-window h2 {
+  margin-top: 0;
+}
+
+#update-window form{
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+

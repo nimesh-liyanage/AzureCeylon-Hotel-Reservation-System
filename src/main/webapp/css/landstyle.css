@@ -1,0 +1,40 @@
+@charset "ISO-8859-1";
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.header-content {
+  flex: 1;
+}
+
+.header-content img {
+  max-width: 100%; /* Adjust image size */
+}
+
+.header-buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-buttons button:hover {
+  background-color: #2980b9;
+}
+
+/* Other styles */
+/* Add your other styles for different sections and elements here */
+

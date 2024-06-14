@@ -1,0 +1,49 @@
+@charset "ISO-8859-1";
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 28px;
+    font-size: 32px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.username {
+	font-size: 18px;
+    color: rgb(128, 0, 255); 
+}
+
+.username h1{
+    color: rgb(0, 0, 0); 
+}
+
+
+.select-hotels{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
+}

@@ -1,0 +1,42 @@
+package com.controller.hotel;
+
+import java.io.IOException;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.dao.HotelDAO;
+import com.model.Hotel;
+
+@WebServlet("/hotel-update")
+public class UpdateHotelServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+    private HotelDAO hotelDAO;
+
+    public void init() {
+        hotelDAO = new HotelDAO();
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        int HotelID = Integer.parseInt(request.getParameter("HotelID"));
+        String HotelName = request.getParameter("HotelName");
+        String Address = request.getParameter("Address");
+        String ContactNumber = request.getParameter("ContactNumber");
+        String Description = request.getParameter("Description");
+        String Rating = request.getParameter("Rating");
+
+        Hotel hotel = new Hotel(HotelID, HotelName, Address, ContactNumber, Description, Rating);
+        try {
+			hotelDAO.updateHotel(hotel);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        response.sendRedirect("hotel-list");
+    }
+}
